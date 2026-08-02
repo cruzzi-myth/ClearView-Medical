@@ -54,7 +54,7 @@
       </div>
       <div class="hero-right">
         <div class="hero-img-wrap">
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=700&q=80&auto=format&fit=crop" alt="ClearView Medical team" />
+          <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=700&q=80&auto=format&fit=crop" alt="ClearView doctor consulting with a patient" />
           <div class="hero-card">
             <i class="fas fa-calendar-alt hero-card-icon"></i>
             <div>
@@ -77,7 +77,7 @@
       </div>
       <div class="s-div"></div>
       <div class="stat">
-        <span class="sn" data-target="12">0</span><span class="stat-suf">+</span>
+        <span class="sn" data-target="14">0</span><span class="stat-suf">+</span>
         <span class="sl">Board-Certified Physicians</span>
       </div>
       <div class="s-div"></div>
@@ -144,10 +144,18 @@
         <h2>Meet Our <span class="highlight">Medical Team</span></h2>
         <p>Our physicians are board-certified, experienced, and genuinely invested in your long-term health and wellbeing.</p>
       </div>
-      <div class="doctor-grid">
-        <div class="doctor-card reveal">
+      <div class="doc-tabs" id="docTabs">
+        <button class="doc-tab active" data-filter="all">All Specialists</button>
+        <button class="doc-tab" data-filter="primary">Primary Care</button>
+        <button class="doc-tab" data-filter="cardiology">Cardiology</button>
+        <button class="doc-tab" data-filter="pediatrics">Pediatrics</button>
+        <button class="doc-tab" data-filter="orthopedics">Orthopedics</button>
+        <button class="doc-tab" data-filter="womenshealth">Women's Health</button>
+      </div>
+      <div class="doctor-grid" id="doctorGrid">
+        <div class="doctor-card reveal" data-spec="primary">
           <div class="doc-photo">
-            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&q=80&auto=format&fit=crop" alt="Dr. Sarah Mitchell" />
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&h=410&q=80&auto=format&fit=crop&crop=faces" alt="Dr. Sarah Mitchell" />
           </div>
           <div class="doc-body">
             <h3>Dr. Sarah Mitchell, MD</h3>
@@ -157,9 +165,9 @@
             <a href="#contact" class="doc-btn">Book Appointment</a>
           </div>
         </div>
-        <div class="doctor-card reveal">
+        <div class="doctor-card reveal" data-spec="cardiology">
           <div class="doc-photo">
-            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80&auto=format&fit=crop" alt="Dr. James Rivera" />
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&h=410&q=80&auto=format&fit=crop&crop=faces" alt="Dr. James Rivera" />
           </div>
           <div class="doc-body">
             <h3>Dr. James Rivera, MD</h3>
@@ -169,9 +177,9 @@
             <a href="#contact" class="doc-btn">Book Appointment</a>
           </div>
         </div>
-        <div class="doctor-card reveal">
+        <div class="doctor-card reveal" data-spec="pediatrics">
           <div class="doc-photo">
-            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=500&q=80&auto=format&fit=crop" alt="Dr. Angela Osei" />
+            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=500&h=410&q=80&auto=format&fit=crop&crop=faces" alt="Dr. Angela Osei" />
           </div>
           <div class="doc-body">
             <h3>Dr. Angela Osei, MD</h3>
@@ -181,6 +189,67 @@
             <a href="#contact" class="doc-btn">Book Appointment</a>
           </div>
         </div>
+        <div class="doctor-card reveal" data-spec="orthopedics">
+          <div class="doc-photo">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&h=410&q=80&auto=format&fit=crop&crop=faces" alt="Dr. Marcus Chen" />
+          </div>
+          <div class="doc-body">
+            <h3>Dr. Marcus Chen, MD</h3>
+            <span class="doc-spec">Orthopedic Surgery &amp; Sports Medicine</span>
+            <div class="doc-rule"></div>
+            <p>Fellowship-trained orthopedic surgeon with 9 years of practice. Specializes in sports injuries, joint pain, and minimally invasive fracture repair.</p>
+            <a href="#contact" class="doc-btn">Book Appointment</a>
+          </div>
+        </div>
+        <div class="doctor-card reveal" data-spec="womenshealth">
+          <div class="doc-photo">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&h=410&q=80&auto=format&fit=crop&crop=faces" alt="Dr. Priya Nair" />
+          </div>
+          <div class="doc-body">
+            <h3>Dr. Priya Nair, MD</h3>
+            <span class="doc-spec">Women's Health &amp; Gynecology</span>
+            <div class="doc-rule"></div>
+            <p>14 years in obstetrics and gynecology. Focused on compassionate, personalized care from annual exams through prenatal support.</p>
+            <a href="#contact" class="doc-btn">Book Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Patient Stories</div>
+        <h2>What Our <span class="highlight">Patients Say</span></h2>
+        <p>Real feedback from the families and individuals we've had the privilege of caring for.</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Dr. Mitchell actually listens. I've never felt rushed, and same-day scheduling has saved me twice this year when I got sick unexpectedly."</p>
+          <div class="testi-who">
+            <div class="testi-avatar ta-1">RT</div>
+            <div><strong>Rachel T.</strong><span>Patient since 2019</span></div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Dr. Chen got my knee injury diagnosed and treated within a week of my first call. The whole front desk staff is warm and genuinely helpful."</p>
+          <div class="testi-who">
+            <div class="testi-avatar ta-2">DK</div>
+            <div><strong>David K.</strong><span>Patient since 2022</span></div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Bringing my kids to Dr. Osei has been the best decision. She's patient, thorough, and the online booking makes scheduling around school so easy."</p>
+          <div class="testi-who">
+            <div class="testi-avatar ta-3">MP</div>
+            <div><strong>Maria P.</strong><span>Patient since 2020</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -188,7 +257,7 @@
   <!-- HOURS + WHY US -->
   <section class="section whyhours" id="hours">
     <div class="container wh-inner">
-      <div class="why-block reveal">
+      <div class="why-block reveal" id="about">
         <div class="section-tag" style="text-align:left;display:inline-block;">Why ClearView</div>
         <h2>Healthcare the Way It <span class="highlight">Should Be</span></h2>
         <ul class="why-list">
@@ -227,32 +296,67 @@
         </div>
       </div>
       <div class="contact-form-wrap reveal">
-        <h3>Request an Appointment</h3>
+        <h3 class="form-title">Request an Appointment</h3>
+
+        <div class="booking-progress" id="bookingProgress">
+          <div class="bp-step active" data-step="1"><span class="bp-num">1</span><span class="bp-label">Service</span></div>
+          <div class="bp-line" data-line="1"></div>
+          <div class="bp-step" data-step="2"><span class="bp-num">2</span><span class="bp-label">Doctor</span></div>
+          <div class="bp-line" data-line="2"></div>
+          <div class="bp-step" data-step="3"><span class="bp-num">3</span><span class="bp-label">Your Info</span></div>
+        </div>
+
         <form id="apexForm" novalidate>
-          <div class="frow">
-            <div class="fg"><label>Patient Name</label><input type="text" placeholder="Jane Smith" required /></div>
-            <div class="fg"><label>Date of Birth</label><input type="text" placeholder="MM/DD/YYYY" /></div>
+
+          <div class="form-step active" data-step="1">
+            <h3>What do you need help with?</h3>
+            <div class="service-select-grid">
+              <label class="service-option"><input type="radio" name="service" value="Primary Care" required /><span class="opt-card"><i class="fas fa-stethoscope"></i>Primary Care</span></label>
+              <label class="service-option"><input type="radio" name="service" value="Cardiology" /><span class="opt-card"><i class="fas fa-heart"></i>Cardiology</span></label>
+              <label class="service-option"><input type="radio" name="service" value="Pediatrics" /><span class="opt-card"><i class="fas fa-baby"></i>Pediatrics</span></label>
+              <label class="service-option"><input type="radio" name="service" value="Orthopedics" /><span class="opt-card"><i class="fas fa-bone"></i>Orthopedics</span></label>
+              <label class="service-option"><input type="radio" name="service" value="Women's Health" /><span class="opt-card"><i class="fas fa-female"></i>Women's Health</span></label>
+              <label class="service-option"><input type="radio" name="service" value="Lab & Diagnostics" /><span class="opt-card"><i class="fas fa-vial"></i>Lab &amp; Diagnostics</span></label>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="step-next btn-primary">Continue <i class="fas fa-arrow-right"></i></button>
+            </div>
           </div>
-          <div class="frow">
-            <div class="fg"><label>Phone</label><input type="tel" id="apexPhone" placeholder="(555) 000-0000" /></div>
-            <div class="fg"><label>Email</label><input type="email" placeholder="jane@email.com" required /></div>
+
+          <div class="form-step" data-step="2">
+            <h3>Choose a doctor <span style="font-weight:400;color:var(--lt);">(optional)</span></h3>
+            <div class="doctor-select-grid">
+              <label class="doctor-option"><input type="radio" name="doctor" value="No preference" checked /><span class="opt-card"><i class="fas fa-user-md"></i>No Preference</span></label>
+              <label class="doctor-option"><input type="radio" name="doctor" value="Dr. Sarah Mitchell" /><span class="opt-card"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=100&h=100&q=80&auto=format&fit=crop&crop=faces" alt="" />Dr. Mitchell</span></label>
+              <label class="doctor-option"><input type="radio" name="doctor" value="Dr. James Rivera" /><span class="opt-card"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&h=100&q=80&auto=format&fit=crop&crop=faces" alt="" />Dr. Rivera</span></label>
+              <label class="doctor-option"><input type="radio" name="doctor" value="Dr. Angela Osei" /><span class="opt-card"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=100&h=100&q=80&auto=format&fit=crop&crop=faces" alt="" />Dr. Osei</span></label>
+              <label class="doctor-option"><input type="radio" name="doctor" value="Dr. Marcus Chen" /><span class="opt-card"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=100&h=100&q=80&auto=format&fit=crop&crop=faces" alt="" />Dr. Chen</span></label>
+              <label class="doctor-option"><input type="radio" name="doctor" value="Dr. Priya Nair" /><span class="opt-card"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&q=80&auto=format&fit=crop&crop=faces" alt="" />Dr. Nair</span></label>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="step-back btn-outline">Back</button>
+              <button type="button" class="step-next btn-primary">Continue <i class="fas fa-arrow-right"></i></button>
+            </div>
           </div>
-          <div class="fg">
-            <label>Department</label>
-            <select>
-              <option value="">Select a service</option>
-              <option>Primary Care</option>
-              <option>Cardiology</option>
-              <option>Pediatrics</option>
-              <option>Orthopedics</option>
-              <option>Women's Health</option>
-              <option>Lab &amp; Diagnostics</option>
-              <option>Other / Not Sure</option>
-            </select>
+
+          <div class="form-step" data-step="3">
+            <h3>Your information</h3>
+            <div class="frow">
+              <div class="fg"><label>Patient Name</label><input type="text" placeholder="Jane Smith" required /></div>
+              <div class="fg"><label>Date of Birth</label><input type="text" placeholder="MM/DD/YYYY" /></div>
+            </div>
+            <div class="frow">
+              <div class="fg"><label>Phone</label><input type="tel" id="apexPhone" placeholder="(512) 522-8177" /></div>
+              <div class="fg"><label>Email</label><input type="email" placeholder="jane@email.com" required /></div>
+            </div>
+            <div class="fg"><label>Preferred Date &amp; Time</label><input type="text" placeholder="e.g. This Thursday afternoon" /></div>
+            <div class="fg"><label>Insurance Provider</label><input type="text" placeholder="BlueCross, Aetna, self-pay, etc." /></div>
+            <div class="step-actions">
+              <button type="button" class="step-back btn-outline">Back</button>
+              <button type="submit" class="btn-submit"><i class="fas fa-calendar-check"></i> Request Appointment</button>
+            </div>
           </div>
-          <div class="fg"><label>Preferred Date &amp; Time</label><input type="text" placeholder="e.g. This Thursday afternoon" /></div>
-          <div class="fg"><label>Insurance Provider</label><input type="text" placeholder="BlueCross, Aetna, self-pay, etc." /></div>
-          <button type="submit" class="btn-submit"><i class="fas fa-calendar-check"></i> Request Appointment</button>
+
         </form>
         <div class="form-success" id="apexSuccess" style="display:none;">
           <i class="fas fa-check-circle"></i>
